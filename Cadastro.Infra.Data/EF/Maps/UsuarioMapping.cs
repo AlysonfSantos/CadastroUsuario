@@ -30,6 +30,9 @@ namespace Cadastro.Infra.Data.EF.Maps
             builder.Property(x => x.Email)
                 .IsRequired();
 
+            builder.Property(x => x.Ativo)
+              .IsRequired();
+
             builder.Property(x => x.DataCriacao)
                 .IsRequired();
 

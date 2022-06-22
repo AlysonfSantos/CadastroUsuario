@@ -32,6 +32,7 @@ namespace Cadastro.Domain.Services
         public async Task<Usuario> CadastrarUsuario(Usuario usuario)
         {
             await _cadastroRepository.CadastrarUsuario(usuario);
+            
             await _cadastroRepository.UnitOfWork.SaveChangesAsync();
 
             return usuario;

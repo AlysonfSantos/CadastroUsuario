@@ -7,11 +7,7 @@ using Cadastro.Domain.Interfaces.Services;
 using Cadastro.Domain.Services;
 using Cadastro.Infra.Data.Repositories;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Cadastro.Infra.IoC
 {

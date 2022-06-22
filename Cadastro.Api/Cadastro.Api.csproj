@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Cadastro.Application\Cadastro.Application.csproj" />
+    <ProjectReference Include="..\Cadastro.Infra.IoC\Cadastro.Infra.IoC.csproj" />
   </ItemGroup>
 
 </Project>

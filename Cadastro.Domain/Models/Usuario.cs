@@ -21,13 +21,13 @@ namespace Cadastro.Domain.Models
 
   
 
-        public Usuario(string nome, string cPF, string telefone, string email, bool ativo, DateTime dataCriacao)
+        public Usuario(string nome, string cpf, string telefone, string email, bool ativo, DateTime dataCriacao)
         {
             Nome = nome;
-            CPF = cPF;
+            CPF = cpf;
             Telefone = telefone;
             Email = email;
-            Ativo = ativo;
+            Ativo = true;
             DataCriacao = dataCriacao;
         }
 
@@ -37,7 +37,7 @@ namespace Cadastro.Domain.Models
             Nome = nome;
             Telefone = telefone;
             Email = email;
-            Ativo = ativo;
+            Ativo = true;
             DataUpdate = dataUpdate;
         }
     }

@@ -3,7 +3,6 @@ namespace Cadastro.Application.ViewModels
 {
     public class NovoUsuarioViewModel
     {
-   
         public string Nome { get; set; }
         public string CPF { get; set; }
         public string Telefone { get; set; }
