@@ -30,13 +30,18 @@ namespace Cadastro.Infra.Data.EF.Maps
             builder.Property(x => x.Email)
                 .IsRequired();
 
-            builder.Property(x => x.Ativo)
+            builder.Property(x => x.Habilitação)
               .IsRequired();
 
             builder.Property(x => x.DataCriacao)
                 .IsRequired();
 
             builder.Property(x => x.DataUpdate)
+                .IsRequired();
+
+            builder.HasOne(x => x.Endereco)
+                .WithMany(x => x.Usuario)
+                .HasForeignKey(x => x.EnderecoId)
                 .IsRequired();
         }
     }

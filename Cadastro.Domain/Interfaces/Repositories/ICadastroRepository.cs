@@ -9,5 +9,6 @@ namespace Cadastro.Domain.Interfaces.Repositories
         Task CadastrarUsuario(Usuario   usuario);
         Task AtualizarUsuario(Usuario usuario);
         Task DeletarUsuario(Usuario usuario);
+     
     }
 }

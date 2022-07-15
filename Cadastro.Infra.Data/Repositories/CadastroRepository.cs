@@ -43,6 +43,7 @@ namespace Cadastro.Infra.Data.Repositories
         {
             await Task.FromResult(_context.Remove(usuario));
         }
+
     }
 
 }

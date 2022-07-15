@@ -37,9 +37,8 @@ namespace Cadastro.Application.Services
                 novoUsuarioViewModel.CPF,
                 novoUsuarioViewModel.Telefone,
                 novoUsuarioViewModel.Email,
-                novoUsuarioViewModel.Ativo,
-                novoUsuarioViewModel.DataCriacao
-                );
+                novoUsuarioViewModel.Habilitação,
+                novoUsuarioViewModel.EnderecoId);
             var usuarioCadastrado = await _cadastroService.CadastrarUsuario(novoUsuario);
             return _mapper.Map<UsuarioViewModel>(usuarioCadastrado);
         }
@@ -52,8 +51,9 @@ namespace Cadastro.Application.Services
                 Nome = atualizarUsuarioViewModel.Nome,
                 Telefone = atualizarUsuarioViewModel.Telefone,
                 Email = atualizarUsuarioViewModel.Email,
-                Ativo = atualizarUsuarioViewModel.Ativo,
-                DataUpdate = atualizarUsuarioViewModel.DataUpdate
+                Habilitação = atualizarUsuarioViewModel.Habilitação,
+                DataUpdate = atualizarUsuarioViewModel.DataUpdate,
+                
             };
             var usuarioAtualizado = await _cadastroService.AtualizarUsuario(command);
             return _mapper.Map<UsuarioViewModel>(usuarioAtualizado);

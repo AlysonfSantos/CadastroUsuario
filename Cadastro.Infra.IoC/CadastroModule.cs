@@ -34,6 +34,9 @@ namespace Cadastro.Infra.IoC
             services.AddScoped<ICadastroAppService, CadastroAppService>();
             services.AddScoped<ICadastroService, CadastroService>();
             services.AddScoped<ICadastroRepository, CadastroRepository>();
+            services.AddScoped<IEnderecoAppService, EnderecoAppService>();
+            services.AddScoped<IEnderecoService, EnderecoService>();
+            services.AddScoped<IEnderecoRepository, EnderecoRepository>();
 
             return services;
         }

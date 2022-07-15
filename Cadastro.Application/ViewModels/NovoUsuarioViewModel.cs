@@ -7,8 +7,10 @@ namespace Cadastro.Application.ViewModels
         public string CPF { get; set; }
         public string Telefone { get; set; }
         public string Email { get; set; }
-        public bool Ativo { get; set; }
+        public bool Habilitação { get; set; }
         public DateTime DataCriacao { get; set; }
-        
+        public int EnderecoId { get; set; }
+
+
     }
 }

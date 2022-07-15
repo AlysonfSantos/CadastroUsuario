@@ -9,6 +9,8 @@ namespace Cadastro.Domain.Interfaces.Services
         Task<Usuario> UsuarioId(long id);
         Task<Usuario> CadastrarUsuario(Usuario usuario);
         Task<Usuario> AtualizarUsuario(AtualizarUsuarioCommand command);
-        Task<bool> DeletarUsuario(long id);    
+        Task<bool> DeletarUsuario(long id);
+
+
     }
 }

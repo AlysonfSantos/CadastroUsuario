@@ -12,7 +12,8 @@ namespace Cadastro.Domain.Models.Commands
         public string Nome { get;  set; }
         public string Telefone { get;  set; }
         public string Email { get;  set; }
-        public bool Ativo { get;  set; }
+        public bool Habilitação { get;  set; }
         public DateTime DataUpdate { get;  set; }
+        
     }
 }
